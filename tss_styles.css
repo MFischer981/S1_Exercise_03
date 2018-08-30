@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(tss_layout.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
@@ -20,20 +21,43 @@ html {
 body {
     color: rgb(91, 91, 91);
     background-color: ivory;
+    font-family: "Roboto", Verdana, Geneva, sans-serif;
 }
 
 /* Heading Styles */
 h1 {
     color: white;
     background-color: rgb(222, 128, 60);
+    padding-left: .4vw;
+}
+
+article#about_tss h1 {
+    color: white;
+    background-color: rgb(222, 128, 60);
+}
+
+article#about_tss h2 {
+    color: white;
+    background-color: rgb(235, 177, 131);
 }
 
 h2 {
     color: white;
     background-color: rgb(235, 177, 131);
+    padding-left: .4vw;
+}
+
+article.syllabus h1,
+h2 {
+    background-color: rgb(255, 185, 255);
+    color: rgb(101, 101, 101);
 }
 
 /* Aside and Blockquote Styles */
+aside blockquote {
+    color: rgb(232, 165, 116);
+}
+
 /* Navigation Styles */
 /* List Styles */
 /* Footer Styles */
