@@ -37,7 +37,6 @@ h2 {
 }
 
 h1 {
-    padding-left: .4vw;
     font-size: 2.2em;
 }
 
@@ -52,7 +51,6 @@ article#about_tss h2 {
 }
 
 h2 {
-    padding-left: .4vw;
     font-size: 1.5em;
 }
 
@@ -69,6 +67,7 @@ aside {
 
 aside blockquote {
     color: rgb(232, 165, 116);
+    margin: 20px 5px;
 }
 
 /* Navigation Styles */
@@ -78,9 +77,31 @@ nav {
 
 nav>ul {
     line-height: 2em;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+nav>ul>li.newgroup {
+    margin-top: 20px;
 }
 
 /* List Styles */
+article.syllabus ol {
+    list-style-type: upper-roman;
+}
+
+article.syllabus ol ol {
+    list-style-type: upper-alpha;
+}
+
+article.syllabus ol ol ol {
+    list-style-type: decimal;
+}
+
+article#about_tss ul {
+    list-style-image: url("runicon.png");
+}
+
 /* Footer Styles */
 body>footer address {
     background-color: rgb(222, 128, 60);
